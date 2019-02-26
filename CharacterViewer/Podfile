@@ -1,0 +1,16 @@
+platform :ios, '10.0'
+
+def shared_pods
+    pod 'Alamofire'
+    pod 'AlamofireImage'
+end
+
+target 'SimpsonsViewer' do
+  use_frameworks!
+  shared_pods
+end
+
+target 'WireViewer' do
+  use_frameworks!
+  shared_pods
+end
